@@ -1,0 +1,30 @@
+#! /usr/bin/ruby
+
+require_relative 'lib/client.rb'
+require_relative 'lib/providers/tiempo.rb'
+
+ARGUMENTS_SIZE = 2
+PROVIDER = Tiempo
+
+def self.client(city)
+  Client.new(city, PROVIDER)
+end
+
+
+@function = ARGV[0]
+@city = ARGV[1]
+
+
+raise ArgumentError 'Incorrect number of aguments' unless ARGV.size == ARGUMENTS_SIZE
+
+
+case @function
+  when '-today'
+    puts client(@city).today_temperature
+  when '-av_max'
+    puts client(@city).week_max_average
+  when '-av_min'
+    puts client(@city).week_min_average
+  else
+    raise ArgumentError, 'Incorrect arguments'
+end
