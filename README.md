@@ -7,11 +7,11 @@ This comes with a provider implementation for tiempo.com API and configuration f
 
 You can use that three functions:
 
-  **-today** to get maximun and minumun temperatures of today in the city
+  **-today** to get maximum and minumun temperatures of today in the city
 
   **-av_min** to get minumun temperatures average of next week in the city
 
-  **-av_max** to get maximun temperatures average of next week in the city
+  **-av_max** to get maximum temperatures average of next week in the city
 
 
 ## Setup with Docker

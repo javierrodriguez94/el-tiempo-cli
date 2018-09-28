@@ -6,17 +6,17 @@ class Client
 
   def today_temperature
     fetch_temperatures
-    [@week_temperatures[:minimun].first, @week_temperatures[:maximun].first]
+    [@week_temperatures[:minimum].first, @week_temperatures[:maximum].first]
   end
 
   def week_max_average
     fetch_temperatures
-    week_average @week_temperatures[:maximun]
+    week_average @week_temperatures[:maximum]
   end
 
   def week_min_average
     fetch_temperatures
-    week_average @week_temperatures[:minimun]
+    week_average @week_temperatures[:minimum]
   end
 
 private
@@ -27,8 +27,8 @@ private
 
   def fetch_temperatures
     @week_temperatures = {
-      minimun: @provider.week_minimun_temperatures,
-      maximun: @provider.week_maximun_temperatures
+      minimum: @provider.week_minimum_temperatures,
+      maximum: @provider.week_maximum_temperatures
     }
   end
 

@@ -40,19 +40,19 @@ describe Tiempo do
     let(:week_mins) { [14, 15, 17, 17, 17, 13, 12] }
     let(:week_maxs) { [23, 27, 26, 26, 21, 22, 24] }
 
-    describe '#week_minimun_temperatures' do
+    describe '#week_minimum_temperatures' do
       it 'returns week minimum temperatures in the city' do
         instance = subject
         instance.instance_variable_set(:@city_id, 1)
-        expect(instance.week_minimun_temperatures).to eq week_mins
+        expect(instance.week_minimum_temperatures).to eq week_mins
       end
     end
 
-    describe '#week_maximun_temperatures' do
+    describe '#week_maximum_temperatures' do
       it 'returns todays temperature in the given city' do
         instance = subject
         instance.instance_variable_set(:@city_id, 1)
-        expect(instance.week_maximun_temperatures).to eq week_maxs
+        expect(instance.week_maximum_temperatures).to eq week_maxs
       end
     end
   end

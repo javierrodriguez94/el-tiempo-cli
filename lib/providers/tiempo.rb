@@ -13,12 +13,12 @@ class Tiempo
       @city_id = parse_city_id(city)
   end
 
-  def week_minimun_temperatures
+  def week_minimum_temperatures
     @temperatures_data ||= fetch_temperatures_data
     parse_week_temperatures('Temperatura Mínima')
   end
 
-  def week_maximun_temperatures
+  def week_maximum_temperatures
     @temperatures_data ||= fetch_temperatures_data
     parse_week_temperatures('Temperatura Máxima')
   end

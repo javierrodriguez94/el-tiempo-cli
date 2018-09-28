@@ -16,10 +16,10 @@ describe Client do
       .with(city)
       .and_return(provider)
     allow(provider)
-      .to receive(:week_minimun_temperatures)
+      .to receive(:week_minimum_temperatures)
       .and_return(min_temperatures)
     allow(provider)
-      .to receive(:week_maximun_temperatures)
+      .to receive(:week_maximum_temperatures)
       .and_return(max_temperatures)
   end
 
