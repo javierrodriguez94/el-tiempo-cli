@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<report>
+    <location city="Barcelona [Barcelona;España]">
+        <interesting>
+            <url description="Predicción">https://www.tiempo.com/barcelona.htm</url>
+        </interesting>
+        <var>
+            <name>Temperatura Mínima</name>
+            <icon>4</icon>
+            <data>
+                <forecast data_sequence="1" value="14"/>
+                <forecast data_sequence="2" value="15"/>
+                <forecast data_sequence="3" value="17"/>
+                <forecast data_sequence="4" value="17"/>
+                <forecast data_sequence="5" value="17"/>
+                <forecast data_sequence="6" value="13"/>
+                <forecast data_sequence="7" value="12"/>
+            </data>
+        </var>
+        <var>
+            <name>Temperatura Máxima</name>
+            <icon>5</icon>
+            <data>
+                <forecast data_sequence="1" value="23"/>
+                <forecast data_sequence="2" value="27"/>
+                <forecast data_sequence="3" value="26"/>
+                <forecast data_sequence="4" value="26"/>
+                <forecast data_sequence="5" value="21"/>
+                <forecast data_sequence="6" value="22"/>
+                <forecast data_sequence="7" value="24"/>
+            </data>
+        </var>
+        <var>
+            <name>Viento</name>
+            <icon>9</icon>
+            <data>
+                <forecast data_sequence="1" id="16" idB="48" value="Viento moderado de noroeste" valueB="Viento moderado de noroeste"/>
+                <forecast data_sequence="2" id="14" idB="46" value="Viento moderado de suroeste" valueB="Viento moderado de suroeste"/>
+                <forecast data_sequence="3" id="12" idB="44" value="Viento moderado de sureste" valueB="Viento moderado de sureste"/>
+                <forecast data_sequence="4" id="13" idB="45" value="Viento moderado de sur" valueB="Viento moderado de sur"/>
+                <forecast data_sequence="5" id="33" idB="44" value="Viento variable" valueB="Viento moderado de sureste"/>
+                <forecast data_sequence="6" id="16" idB="48" value="Viento moderado de noroeste" valueB="Viento moderado de noroeste"/>
+                <forecast data_sequence="7" id="10" idB="50" value="Viento moderado de noreste" valueB="Viento moderado de noreste"/>
+            </data>
+        </var>
+        <var>
+            <name>Símbolo del tiempo</name>
+            <icon>10</icon>
+            <data>
+                <forecast data_sequence="1" id="2" id2="2" value="Intervalos nubosos" value2="Intervalos nubosos"/>
+                <forecast data_sequence="2" id="1" id2="1" value="Cielos despejados" value2="Cielos despejados"/>
+                <forecast data_sequence="3" id="2" id2="2" value="Intervalos nubosos" value2="Intervalos nubosos"/>
+                <forecast data_sequence="4" id="2" id2="2" value="Intervalos nubosos" value2="Intervalos nubosos"/>
+                <forecast data_sequence="5" id="12" id2="12" value="Cielos nubosos con chubascos tormentosos" value2="Cielos nubosos con chubascos tormentosos"/>
+                <forecast data_sequence="6" id="5" id2="5" value="Intervalos nubosos con lluvias débiles" value2="Intervalos nubosos con lluvias débiles"/>
+                <forecast data_sequence="7" id="1" id2="1" value="Cielos despejados" value2="Cielos despejados"/>
+            </data>
+        </var>
+        <var>
+            <name>Día</name>
+            <icon>15</icon>
+            <data>
+                <forecast data_sequence="1" value="Jueves"/>
+                <forecast data_sequence="2" value="Viernes"/>
+                <forecast data_sequence="3" value="Sábado"/>
+                <forecast data_sequence="4" value="Domingo"/>
+                <forecast data_sequence="5" value="Lunes"/>
+                <forecast data_sequence="6" value="Martes"/>
+                <forecast data_sequence="7" value="Miércoles"/>
+            </data>
+        </var>
+        <var>
+            <name>Definición de Atmosfera</name>
+            <icon>19</icon>
+            <data>
+                <forecast data_sequence="1" value="Durante todo el dia cielos despejados"/>
+                <forecast data_sequence="2" value="Durante todo el dia cielos despejados"/>
+                <forecast data_sequence="3" value="Durante todo el dia cielos despejados"/>
+                <forecast data_sequence="4" value="Durante todo el dia cielos despejados"/>
+                <forecast data_sequence="5" value="Durante la primera mitad del día intervalos nubosos con chubascos tormentosos tendiendo en la segunda mitad del día a cielos cubiertos"/>
+                <forecast data_sequence="6" value="Durante la primera mitad del día cielos cubiertos tendiendo en la segunda mitad del día a cielos despejados"/>
+                <forecast data_sequence="7" value="Durante todo el dia cielos despejados"/>
+            </data>
+        </var>
+    </location>
+</report>
