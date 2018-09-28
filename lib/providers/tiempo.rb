@@ -26,11 +26,11 @@ class Tiempo
 private
 
   def parse_city_id(city_name)
-    city = fetch_cities_data
-              .select{|city| city['name'][0]['content'].downcase == city_name }
-              .first
-    raise ArgumentError, "Unable to find city #{city_name}" unless city
-    city
+    target_city = fetch_cities_data
+                    .select{|city| city['name'][0]['content'].downcase == city_name }
+                    .first
+    raise ArgumentError, "Unable to find city #{city_name}" unless target_city
+    target_city
       .fetch('name')
       .first
       .fetch('id')
@@ -70,19 +70,18 @@ private
   end
 
   def parse_response_to_hash(response)
-    hash = XmlSimple.xml_in(response.body)
+    XmlSimple.xml_in(response.body)
   end
 
   def parse_week_temperatures(target_temperatures)
     temperatures  = @temperatures_data
-                      .select{ |a| a["name"] == [target_temperatures]}
+                      .select{ |a| a['name'] == [target_temperatures]}
                       .first
 
     temperatures
       .fetch('data')
       .first
       .fetch('forecast')
-      .map{ |a| a["value"].to_i }
+      .map{ |a| a['value'].to_i }
   end
-
 end
