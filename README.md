@@ -45,6 +45,12 @@ And run the container with the affiliate_id of tiempo.com API
 docker run -it -e Tiempo::AFFILIATE_ID="XXXXXXXXX" el-tiempo-cli
 ```
 
+Or if you want to change the division param to get other cities available:
+
+```
+docker run -it -e Tiempo::AFFILIATE_ID="XXXXXXXXX" -e Tiempo::DIVISION=NNN el-tiempo-cli
+```
+
 ### Usage
 
 After ```docker run -it```  you are in the docker container terminal so you can use the app like this:
